@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS classRoster;
+CREATE DATABASE classRoster;
+
+USE classRoster;
+
+CREATE TABLE teacher(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    firstName VARCHAR(30) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    specialty VARCHAR(50)
+);
+
+insert into teacher(firstname, lastname, specialty) values  ("Shane", "Keefe", "Maths"), ("Mary", "Lyons", "History");
